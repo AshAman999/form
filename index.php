@@ -3,8 +3,8 @@ $insert = false;
 if(isset($_POST['name'])){
     // Set connection variables
     $server = "localhost";
-    $username = "root";
-    $password = "";
+    $username = "id14566184_ash";
+    $password = "nlb)igvZ5_^Xcivs";
 
     // Create a database connection
     $con = mysqli_connect($server, $username, $password);
@@ -22,7 +22,7 @@ if(isset($_POST['name'])){
     $email = $_POST['email'];
     $phone = $_POST['phone'];
     $desc = $_POST['desc'];
-    $sql = "INSERT INTO `trip`.`trip` (`name`, `age`, `gender`, `email`, `phone`, `other`, `dt`) VALUES ('$name', '$age', '$gender', '$email', '$phone', '$desc', current_timestamp());";
+    $sql = "INSERT INTO `id14566184_trip`.`trip` (`name`, `age`, `gender`, `email`, `phone`, `other`, `dt`) VALUES ('$name', '$age', '$gender', '$email', '$phone', '$desc', current_timestamp());";
     // echo $sql;
 
     // Execute the query
@@ -59,7 +59,7 @@ if(isset($_POST['name'])){
                 <p>Enter your details and make your attendance count </p>
                 <?php
         if($insert == true){
-        echo "<p class='submitMsg'>Thanks for submitting your form. We are happy to see you joining us for the US trip</p>";
+        echo "<p class='submitMsg'>Thanks for submitting your form</p>";
         }
     ?>
                 <form action="index.php" method="post">
